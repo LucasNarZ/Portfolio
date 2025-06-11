@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@plugin "daisyui";
+
+@layer components {
+  .underline-animate {
+    @apply relative;
+
+    & > span:first-child {
+      @apply text-lg font-light dark:text-white text-black cursor-pointer;
+    }
+
+    & > span:last-child {
+      @apply absolute left-1/2 bottom-0 w-0 h-[1px] dark:bg-white bg-black transition-all duration-500 group-hover:w-full group-hover:left-0 origin-center;
+    }
+  }
+}
+
+body {
+  font-family: "Fira Code", monospace;
+}
+.typed-cursor {
+  font-size: 1.8rem; /* aumenta o tamanho */
+  animation: blink 0.7s infinite;
+}
