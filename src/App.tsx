@@ -2,6 +2,8 @@ import { useState } from "react"
 import Header from "./components/header"
 import Home from "./sections/home"
 import AboutMe from "./sections/aboutMe";
+import Projects from "./sections/projects";
+import Skills from "./sections/skills";
 
 function App() {
   const [ darkTheme, setDarkTheme ] = useState(true);
@@ -11,6 +13,8 @@ function App() {
       <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
       <Home />
       <AboutMe />
+      <Projects />
+      <Skills />
     </div>
   )
 }
