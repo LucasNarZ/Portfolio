@@ -37,11 +37,11 @@ export default function CareerTimeline() {
                         className={`relative w-full flex items-center mb-5 transition-all duration-500 ${!isLeft ? "justify-start" : "justify-end"
                             }`}
                     >
-                        <div className="w-1/2 px-4 group">
-                            <div className="bg-gradient-to-br from-white to-gray-50 shadow-lg group-hover:shadow-2xl rounded-2xl p-4 transform transition-all duration-300 group-hover:scale-[1.03]">
-                                <p className="text-sm text-gray-400">{step.date}</p>
-                                <h3 className="text-xl font-bold text-gray-800">{step.title}</h3>
-                                <p className="text-gray-600 mt-2">{step.description}</p>
+                        <div className="w-1/2 px-4 group ">
+                            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-600 dark:to-gray-700 shadow-lg group-hover:shadow-2xl rounded-2xl p-4 transform transition-all duration-300 group-hover:scale-[1.03]">
+                                <p className="text-sm text-gray-400 dark:text-white">{step.date}</p>
+                                <h3 className="text-xl font-bold text-gray-800  dark:text-white">{step.title}</h3>
+                                <p className="text-gray-600 mt-2 dark:text-gray-50">{step.description}</p>
                             </div>
                         </div>
 
