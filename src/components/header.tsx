@@ -7,9 +7,6 @@ interface HeaderProps {
 }
 
 function Header({darkTheme, setDarkTheme}:HeaderProps){
-    
-    
-    
     return(
         <nav className="flex justify-between items-center w-[100vw] h-16 p-3 bg-gray-100 dark:bg-gray-800 fixed z-1000">
             <div className="flex flex-col ml-3">
@@ -19,19 +16,27 @@ function Header({darkTheme, setDarkTheme}:HeaderProps){
             <div>
                 <ul className="flex gap-8">
                     <li className="underline-animate group">
-                        <span>Home</span>
+                        <span><a href="#Home">Home</a></span>
                         <span></span>
                     </li>
                     <li className="underline-animate group">
-                        <span>About Me</span>
+                        <span><a href="#AboutMe">About Me</a></span>
                         <span></span>
                     </li>
                     <li className="underline-animate group">
-                        <span>Skills</span>
+                        <span><a href="#Projects">Projects</a></span>
                         <span></span>
                     </li>
                     <li className="underline-animate group">
-                        <span>Projects</span>
+                        <span><a href="#Skills">Skills</a></span>
+                        <span></span>
+                    </li>
+                    <li className="underline-animate group">
+                        <span><a href="#Contact">Contact</a></span>
+                        <span></span>
+                    </li>
+                    <li className="underline-animate group">
+                        <span><a href="#SideProjects">Side Projects</a></span>
                         <span></span>
                     </li>
                 </ul>
