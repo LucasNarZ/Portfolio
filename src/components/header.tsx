@@ -1,5 +1,6 @@
 import type { Dispatch } from "react";
 import ThemeToggle from "./themeToggle";
+import LanguageToggle from "./languageToggle";
 
 interface HeaderProps {
     darkTheme: boolean;
@@ -41,7 +42,10 @@ function Header({darkTheme, setDarkTheme}:HeaderProps){
                     </li>
                 </ul>
             </div>
-            <ThemeToggle  darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+            <div className="flex gap-6">
+                <ThemeToggle  darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+                <LanguageToggle />
+            </div>
         </nav>
     )
 }
