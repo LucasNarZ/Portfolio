@@ -7,7 +7,7 @@
     @apply relative;
 
     & > span:first-child {
-      @apply text-lg font-light dark:text-white text-black cursor-pointer;
+      @apply textarea-md font-light dark:text-white text-black cursor-pointer;
     }
 
     & > span:last-child {
@@ -20,6 +20,6 @@ body {
   font-family: "Fira Code", monospace;
 }
 .typed-cursor {
-  font-size: 1.8rem; /* aumenta o tamanho */
+  font-size: 1.8rem; 
   animation: blink 0.7s infinite;
 }
