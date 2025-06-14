@@ -8,6 +8,11 @@ type CareerStep = {
 
 const careerData: CareerStep[] = [
     {
+        date: "May 2020",
+        title: "First Time Programming",
+        description: "When i started to learn my first programming language, foundation of what i know today.",
+    },
+    {
         date: "Oct 2024 - now",
         title: "internship BackEnd Developer",
         description: "My first professional experience.",
