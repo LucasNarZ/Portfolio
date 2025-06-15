@@ -4,6 +4,8 @@ import Home from "./sections/home"
 import AboutMe from "./sections/aboutMe";
 import Projects from "./sections/projects";
 import Skills from "./sections/skills";
+import ContactMe from "./sections/contactMe";
+import Footer from "./components/footer";
 
 function App() {
   const [ darkTheme, setDarkTheme ] = useState(true);
@@ -15,6 +17,8 @@ function App() {
       <AboutMe />
       <Projects />
       <Skills />
+      <ContactMe />
+      <Footer />
     </div>
   )
 }

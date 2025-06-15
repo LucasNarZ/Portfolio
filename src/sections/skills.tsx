@@ -23,7 +23,7 @@ function Skills(){
     ]
 
     return (
-        <section id="Skills" className="flex flex-col w-[100vw] h-[100vh] bg-gray-100 dark:bg-gray-900 items-center">
+        <section id="Skills" className="flex flex-col w-[100vw] h-[900px] bg-gray-100 dark:bg-gray-900 items-center">
             <h1 className="text-4xl mt-10 mb-4 text-black dark:text-white">Skills</h1>
             <p className="mb-12 text-black dark:text-white">The skills that allow me to create anything.</p>
             <div className="h-full flex items-center justify-center">
