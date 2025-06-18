@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function ContactMe() {
   return (
-    <section id="ContactMe" className="duration-700 flex flex-col w-full h-[700px] py-16 px-4 bg-white dark:bg-gray-700 items-center">
+    <section id="Contact" className="duration-700 flex flex-col w-full h-[700px] py-16 px-4 bg-white dark:bg-gray-700 items-center">
       <h1 className="text-4xl mb-4 text-black dark:text-white">Contact Me</h1>
       <p className="text-gray-600 dark:text-gray-300 text-center mb-8 max-w-md">Feel free to reach out through any of the platforms below.</p>
       <div className="flex gap-12 text-3xl items-center h-full">
