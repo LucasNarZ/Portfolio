@@ -27,17 +27,17 @@ const careerData: CareerStep[] = [
 export default function CareerTimeline() {
     return (
         <div className="relative flex flex-col items-center px-4 py-10">
-            <div className="absolute left-1/2 top-0 h-full w-1 bg-gray-300 transform -translate-x-1/2" />
+            <div className={`absolute left-5/6 md:left-1/2 top-0 h-full w-1 bg-gray-300 transform -translate-x-1/2`} />
 
             {careerData.map((step, index) => {
-                const isLeft = index % 2 === 0;
+                const isLeft = window.innerWidth > 500 ? index % 2 === 0 : 0;
                 return (
                     <div
                         key={index}
                         className={`relative w-full flex items-center mb-5 transition-all duration-500 ${!isLeft ? "justify-start" : "justify-end"
                             }`}
                     >
-                        <div className="w-1/2 px-4 group ">
+                        <div className="w-5/6 md:w-1/2 px-4 group ">
                             <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-600 dark:to-gray-700 shadow-lg group-hover:shadow-2xl rounded-2xl p-4 transform transition-all duration-300 group-hover:scale-[1.03]">
                                 <p className="text-sm text-gray-400 dark:text-white">{step.date}</p>
                                 <h3 className="text-xl font-bold text-gray-800  dark:text-white">{step.title}</h3>
@@ -45,7 +45,7 @@ export default function CareerTimeline() {
                             </div>
                         </div>
 
-                        <div className="absolute left-1/2 transform -translate-x-1/2 z-10 bg-white p-2 rounded-full shadow-md group-hover:shadow-xl transition-all duration-300 animate-pulse">
+                        <div className="absolute left-5/6 md:left-1/2 transform -translate-x-1/2 z-10 bg-white p-2 rounded-full shadow-md group-hover:shadow-xl transition-all duration-300 animate-pulse">
                             <div className="transition-transform duration-300 group-hover:scale-125">
                                 {isLeft ? (
                                     <ArrowRight className="text-gray-500" />

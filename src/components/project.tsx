@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, imageUrl, technologies = [], githubUrl = "#", liveUrl = "#" }: ProjectCardProps) {
     return (
-        <div className="group relative overflow-hidden w-[50vw] max-w-[600px] rounded-2xl border transition-transform hover:scale-[1.02] shadow-xl hover:shadow-2xl bg-white/70 border-gray-200 backdrop-blur-md dark:bg-white/10 dark:border-white/20">
+        <div className="group relative overflow-hidden w-11/12 place-self-center md:w-[50vw] max-w-[600px] rounded-2xl border transition-transform hover:scale-[1.02] shadow-xl hover:shadow-2xl bg-white/70 border-gray-200 backdrop-blur-md dark:bg-white/10 dark:border-white/20">
             <img src={imageUrl} alt={title} className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="p-5 space-y-3">
                 {technologies.length > 0 && (

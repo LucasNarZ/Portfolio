@@ -12,7 +12,7 @@ function ContactMe() {
         <a href="mailto:lucasnarloch123@gmail.com" className="text-gray-800 dark:text-white hover:text-red-500 transition-colors" aria-label="Email">
             <FaEnvelope className="w-12 h-12" />
         </a>
-        <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-white hover:text-blue-700 transition-colors" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/lucasnarloch" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-white hover:text-blue-700 transition-colors" aria-label="LinkedIn">
             <FaLinkedin className="w-12 h-12"/>
         </a>
       </div>
